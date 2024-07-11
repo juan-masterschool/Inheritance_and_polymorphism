@@ -2,13 +2,14 @@ from scipy import constants
 from abc import ABC, abstractmethod
 
 
+# Class for defining a CelestialBody
 class CelestialBody(ABC):
-    def __init__(self, name, radius_in_m, mass_in_kg, mean_temperature, age):
+    def __init__(self, name, radius_in_m, mass_in_kg, mean_temperature_in_celsius, age_in_years):
         self.name = name
         self.radius_in_m = radius_in_m
         self.mass_in_kg = mass_in_kg
-        self.mean_temperature = mean_temperature
-        self.age = age
+        self.mean_temperature_in_celsius = mean_temperature_in_celsius
+        self.age_in_years = age_in_years
 
     def gravitational_acceleration(self):
         return (constants.gravitational_constant * self.mass_in_kg) / (self.radius_in_m ** 2)
