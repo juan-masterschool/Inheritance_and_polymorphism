@@ -10,8 +10,8 @@ def main():
     print(f"{earth.name} class: {earth}")
     print(f"{earth.name} host: {earth.get_host()}\n")
 
-    print(f"{earth.name} class: {moon}")
-    print(f"{sun.name} host: {moon.get_host()}\n")
+    print(f"{moon.name} class: {moon}")
+    print(f"{moon.name} host: {moon.get_host()}\n")
 
     print(f"{sun.name} class: {sun}")
     print(f"{sun.name} host: {sun.get_host()}\n")
